@@ -29,9 +29,9 @@
 #include "fluid_adriver.h"
 #include "fluid_mdriver.h"
 #include "fluid_settings.h"
-
+#if HAVE_CONFIG_H
 #include "config.h"
-
+#endif
 #if COREAUDIO_SUPPORT
 #include <CoreServices/CoreServices.h>
 #include <CoreAudio/CoreAudioTypes.h>

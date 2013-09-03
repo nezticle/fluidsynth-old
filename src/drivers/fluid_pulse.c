@@ -28,7 +28,9 @@
 #include "fluid_adriver.h"
 #include "fluid_settings.h"
 
+#if HAVE_CONFIG_H
 #include "config.h"
+#endif
 
 #include <pulse/simple.h>
 #include <pulse/error.h>
