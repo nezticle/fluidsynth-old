@@ -80,13 +80,12 @@ SOURCES += src/utils/fluid_conv.c \
 
 linux{
     CONFIG += link_pkgconfig
-
+    PKGCONFIG += glib-2.0
     #pulseaudio
-    PKGCONFIG += libpulse \
-                 libpulse-mainloop-glib
-    DEFINES += PULSE_SUPPORT=1
-    SOURCES += src/drivers/fluid_pulse.c
-    LIBS +=
+#    PKGCONFIG += libpulse \
+#                 libpulse-mainloop-glib
+#    DEFINES += PULSE_SUPPORT=1
+#    SOURCES += src/drivers/fluid_pulse.c
     #alsa
     DEFINES += ALSA_SUPPORT=1
     SOURCES += src/drivers/fluid_alsa.c
